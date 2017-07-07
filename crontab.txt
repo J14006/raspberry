@@ -1,0 +1,7 @@
+crontabでスケジュールを設定し、プログラムを2分間隔で定期実行する
+
+コマンド
+$crontab -e
+
+-e(編集)で最下部に以下を追加
+*/2 * * * * python /home/pi/DBInput.py 2> /home/pi/DBInput.log
